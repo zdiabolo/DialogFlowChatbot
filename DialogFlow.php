@@ -7,7 +7,7 @@ use Google\Cloud\Dialogflow\V2\SessionsClient;
 use Google\Cloud\Dialogflow\V2\TextInput;
 use Google\Cloud\Dialogflow\V2\QueryInput;
 
-putenv('XXXXX'); // <== important (Windows env)
+putenv('XXXX'); // <== importante
 
  $sessionsClient = new SessionsClient();
 try {
@@ -36,9 +36,10 @@ try {
            printf('Detected intent: %s (confidence: %f)' . PHP_EOL, $displayName,
                $confidence);
            print(PHP_EOL);
-           printf('Fulfilment text: %s' . PHP_EOL, $fulfilmentText);*/
+           printf('Fulfilment text: %s' . PHP_EOL, $fulfilmentText);
+   */
 
-     echo $fulfilmentText;
+   echo $fulfilmentText;
 
 } finally {
     $sessionsClient->close();
